@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Robotolight';
+    font-display: swap;
+    src: url(../fontes/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Robotoregular';
+    font-display: swap;
+    src: url(../fontes/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Robotobold';
+    font-display: swap;
+    src: url(../fontes/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Oswaldsemibold';
+    font-display: swap;
+    src: url(../fontes/Oswald-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Latoregular';
+    font-display: swap;
+    src: url(../fontes/Lato-Regular.ttf);
+}
+
+:root {
+    --cor0: #F32F2F;
+    --cor1: #ffffff;
+    --cor2: #a1a1a1;
+    --cor3: #333333;
+    --cor4: #2d2d2d;
+    --cor5: #000;
+    --cor6: #782448;
+
+    --fonte-padrão: 'Arial, Verdana, Helvetica, sans-serif';
+    --fonte1: 'Robotolight';
+    --fonte2: 'Robotoregular';
+    --fonte3: 'Robotobold';
+    --fonte4: 'Oswaldsemibold';
+    --fonte5: 'Latoregular';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red !important; */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cor5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor0);
+    border-radius: 10px;
+}
+
+body {
+    max-width: 1366px;
+    margin: auto;
+    background-color: black;
+}
