@@ -1,33 +1,9 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'Robotolight';
+    font-family: 'Realheadwebbold';
     font-display: swap;
-    src: url(../fontes/Roboto-Light.ttf);
-}
-
-@font-face {
-    font-family: 'Robotoregular';
-    font-display: swap;
-    src: url(../fontes/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Robotobold';
-    font-display: swap;
-    src: url(../fontes/Roboto-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'Oswaldsemibold';
-    font-display: swap;
-    src: url(../fontes/Oswald-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: 'Latoregular';
-    font-display: swap;
-    src: url(../fontes/Lato-Regular.ttf);
+    src: url(../fontes/Real-head-web-bold.ttf);
 }
 
 :root {
@@ -38,13 +14,15 @@
     --cor4: #2d2d2d;
     --cor5: #000;
     --cor6: #782448;
+    --cor7: #E80A4D;
+    --cor8: #a7a7a7;
 
     --fonte-padrão: 'Arial, Verdana, Helvetica, sans-serif';
-    --fonte1: 'Robotolight';
-    --fonte2: 'Robotoregular';
-    --fonte3: 'Robotobold';
-    --fonte4: 'Oswaldsemibold';
-    --fonte5: 'Latoregular';
+    --fonte1: 'Realheadwebbold';
+    --fonte2: 'XXX';
+    --fonte3: 'XXX';
+    --fonte4: 'XXX';
+    --fonte5: 'XXX';
 }
 
 * {
@@ -63,12 +41,84 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--cor0);
+    background-color: var(--cor7);
     border-radius: 10px;
 }
 
 body {
     max-width: 1366px;
     margin: auto;
-    background-color: black;
+    background-color: var(--cor5);
+}
+
+header .onm-hero .conteiner1 .divtexto1 .divimagem1 {
+    width: min(138px, 80%);
+    margin: 7rem 0 8rem;
+}
+
+header .onm-hero .conteiner1 .divtexto1 h1 {
+    font-family: var(--fonte1);
+    font-size: clamp(2.5rem, 1rem + 3vw, 3.4rem);
+    font-weight: 700;
+    line-height: clamp(3.2rem, 1rem + 6vw, 4.4rem);
+    margin: 0 0 clamp(0.7rem, 0vw + 1.4vw, 2.2rem);
+    color: var(--cor1);
+}
+
+header .onm-hero .conteiner1 .divtexto1 p {
+    font-family: var(--fonte1);
+    width: min(44rem, 100%);
+    padding: 0 0 3rem;
+    margin: 0 0 3rem;
+    font-size: clamp(1.3rem, 2vw, 1.6rem);
+    color: var(--cor8);
+    position: relative;
+}
+
+p.onm-hero-bold:before {
+    position: absolute;
+    content: '';
+    width: 2.5rem;
+    height: 1px;
+    background: #a7a7a7;
+    left: 0;
+    bottom: 0;
+}
+
+header .onm-hero .conteiner1 .divtexto1 .onm-hero-live {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--cor7);
+    color: var(--cor5);
+    text-align: center;
+    font-family: var(--fonte1);
+    font-size: 14px;
+    height: 100%;
+    padding: 5px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
 }
